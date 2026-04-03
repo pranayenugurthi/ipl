@@ -167,11 +167,7 @@ text-shadow: 2px 4px 4px black;
 
 @media (max-width:500px) {
    
-    .nav-links-sm{
-        background-color: #ffffff;
-        border-radius: 4px;
-        z-index: 1;
-    }
+    
     .navbar-sm{
         height: 6vh !important;
         padding: 0px 10px;
@@ -180,10 +176,7 @@ text-shadow: 2px 4px 4px black;
     .navbar-icon-sm{
             font-size: 15px;
     }
-    .item-flex{
-        border-bottom: 1px solid #ddd;
-        border-radius: 4px;
-    }
+   
     .match-card{
         width: 80%;
     }
@@ -191,11 +184,27 @@ text-shadow: 2px 4px 4px black;
         width: 90%;
     }
 }
-@media (max-width:900px) {
+@media (max-width:990px) {
      .nav-bg{
         height: 8vh;
     }
     .content-page{
         height: 92vh;
+    }
+    .nav-links-sm{
+        border-radius: 4px;
+        z-index: 1;
+    }
+     .item-flex{
+        
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .nav-items-ml{
+        width: max-content !important;
+        background-color: #fff;
+        border-radius: 4px;
+        border: 1px solid #3b353587;
+        margin-top: 5px;
     }
 }
