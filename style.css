@@ -193,6 +193,9 @@ text-shadow: 2px 4px 4px black;
 }
 @media (max-width:900px) {
      .nav-bg{
-        height: 10vh;
+        height: 8vh;
+    }
+    .content-page{
+        height: 92vh;
     }
 }
