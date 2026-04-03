@@ -10,7 +10,7 @@ let sectionList=[
     {name:"players",display:"none"},
     {name:"points",display:"none"}
 ];
-// Smooth Scroll
+
 function display(content) {
     if(content==="home"){
         window.scrollTo({top: 0, behavior: 'smooth'});
@@ -34,7 +34,7 @@ function display(content) {
   console.log(sectionList);
 }
 
-// MATCHES
+
 const matches = [
   { teams: "MI vs CSK", date: "April 5, 7:30 PM",stadium:"Wankhede Stadium" },
   { teams: "RCB vs KKR", date: "April 6, 7:30 PM",stadium:"M Chinnaswamy Stadium" },
@@ -61,7 +61,7 @@ matches.forEach(match => {
   `;
 });
 
-// TEAMS
+
 const teams = [
     {name: "MI", color: "#4949ee",captain: "Rohit Sharma"},
     {name: "CSK", color: "#e7eb28", captain: "MS Dhoni"},
@@ -86,7 +86,7 @@ teams.forEach(team => {
   `;
 });
 
-// PLAYERS
+
 const players = [
     { name: "Virat Kohli", role: "Batsman" },
     { name: "MS Dhoni", role: "Wicketkeeper" },
@@ -114,7 +114,7 @@ players.forEach(player => {
   `;
 });
 
-// POINTS TABLE
+
 const points = [
     { team: "CSK", matches: 5, wins: 4, points: 8 },
     { team: "MI", matches: 5, wins: 3, points: 6 },
@@ -141,15 +141,3 @@ points.forEach(t => {
   `;
 });
 
-// NEWS
-const news = [
-  "CSK wins by 5 wickets",
-  "RCB signs new player",
-  "MI tops the table"
-];
-
-const newsList = document.getElementById("newsList");
-
-news.forEach(n => {
-  newsList.innerHTML += `<li class="list-group-item">${n}</li>`;
-});

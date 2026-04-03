@@ -164,3 +164,32 @@ text-shadow: 2px 4px 4px black;
     font-size: 18px;
     color: #ddd;
 }
+
+@media (max-width:500px) {
+   
+    .nav-links-sm{
+        background-color: #ffffff;
+        border-radius: 4px;
+        z-index: 1;
+    }
+    .navbar-sm{
+        height: 6vh !important;
+        padding: 0px 10px;
+        outline: none !important;
+    }
+    .navbar-icon-sm{
+            font-size: 15px;
+    }
+    .item-flex{
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .match-card{
+        width: 80%;
+    }
+}
+@media (max-width:900px) {
+     .nav-bg{
+        height: 10vh;
+    }
+}
