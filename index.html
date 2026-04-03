@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPL Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+<div class="bgPage d-flex flex-column">
+    <nav class="navbar navbar-expand-lg nav-bg">
+    <div class="container-fluid">
+        <a class="navbar-brand title" onclick="display('home')">TATA IPL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-items-ml">
+                <li class="nav-item item-flex" onclick="display('home')">
+                    <p class="link-style">Home</p>
+                   
+                </li>
+                <li class="nav-item item-flex" onclick="display('schedule')">
+                    <p class="link-style">Schedule</p>
+                </li>
+                <li class="nav-item item-flex" onclick="display('teams')">
+                    <p class="link-style">Teams</p>
+                </li>
+                <li class="nav-item item-flex" onclick="display('players')">
+                    <p class="link-style">Players</p>
+                </li>
+                <li class="nav-item item-flex" onclick="display('points')">
+                    <p class="link-style">Points</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="content-page">
+<div id="home" class="home-container text-center">
+    <div class="home-content">
+        <h1 class="heading">IPL 2026</h1>
+        <p class="caption">Where Cricket Meets Passion</p>
+        <button onclick="display('schedule')" class="btn btn-primary">View Matches</button>
+    </div>
+</div>
+
+<div id="schedule" class="schedule-container">
+    <div class="schedule-content">
+        <h2 class="page-head text-center mb-4">Matches</h2>
+        <div class="match-list" id="matchContainer"></div>
+    </div>
+  
+</div>
+
+<div id="teams" class="team-container">
+ 
+    <h2 class="page-head text-center mb-4">Teams</h2>
+    <div class="team-content" id="teamsContainer"></div>
+  
+</div>
+
+<div id="players" class="container py-5">
+  <h2 class="text-center mb-4">Top Players</h2>
+  <div class="row" id="playersContainer"></div>
+</div>
+
+<div id="points" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Points Table</h2>
+
+    <table class="table table-bordered text-center">
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>Matches</th>
+          <th>Wins</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody id="pointsTable"></tbody>
+    </table>
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
