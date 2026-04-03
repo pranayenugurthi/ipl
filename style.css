@@ -187,6 +187,9 @@ text-shadow: 2px 4px 4px black;
     .match-card{
         width: 80%;
     }
+    .team-card{
+        width: 90%;
+    }
 }
 @media (max-width:900px) {
      .nav-bg{
